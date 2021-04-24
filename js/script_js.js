@@ -70,4 +70,3 @@ document.onscroll = function() {
         txt[9].style.animation = "1 1s 4s forwards txt_anime_05";
     }
 }
-}
