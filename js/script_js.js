@@ -53,20 +53,21 @@ document.onclick = function() {
     }
 }
 document.onscroll = function() {
-    console.log(document.documentElement.scrollTop + " // " + (big_card.getBoundingClientRect().bottom))
-    if ((big_card.getBoundingClientRect().top - big_card.getBoundingClientRect().height) <= 0) {
-        //alert('jklhjkh')
+    if (animation_text[0].getBoundingClientRect().top <= 0) {
         animation_text[0].style.animation = '13s 2 drop_down_bg';
-        animation_text[1].style.animation = '13s 2 drop_down_bg';
         txt[0].style.animation = "1 1s 2s forwards txt_anime_01";
         txt[1].style.animation = "1 1s 2.5s forwards txt_anime_02";
         txt[2].style.animation = "1 1s 3s forwards txt_anime_03";
         txt[3].style.animation = "1 1s 3.5s forwards txt_anime_04";
         txt[4].style.animation = "1 1s 4s forwards txt_anime_05";
+    }
+    if (animation_text[1].getBoundingClientRect().top <= 0) {
+        animation_text[1].style.animation = '13s 2 drop_down_bg';
         txt[5].style.animation = "1 1s 2s forwards txt_anime_01";
         txt[6].style.animation = "1 1s 2.5s forwards txt_anime_02";
         txt[7].style.animation = "1 1s 3s forwards txt_anime_03";
         txt[8].style.animation = "1 1s 3.5s forwards txt_anime_04";
         txt[9].style.animation = "1 1s 4s forwards txt_anime_05";
     }
+}
 }
