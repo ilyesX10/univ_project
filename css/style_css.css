@@ -1,0 +1,108 @@
+* {
+    user-select: none;
+}
+
+#bg-img {
+    background-image: url(../header_img2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar-brand {
+    font-size: 24px;
+}
+
+.navbar-toggler {
+    color: rgb(179, 232, 245);
+}
+
+#title {
+    font-family: cursive;
+    /*font-size: 46px;*/
+    color: rgb(255, 252, 53);
+}
+
+#discp {
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    font-family: cursive;
+}
+
+.box {
+    transform: scale(0);
+    background-color: rgb(250, 233, 0);
+    animation: 1 2s animation_one linear forwards;
+    /*animation-delay: 5s;*/
+}
+
+@keyframes animation_one {
+    to {
+        transform: scale(1);
+    }
+}
+
+.recomadition_book .container {
+    display: flex;
+    scroll-behavior: smooth;
+}
+
+.new_book .container {
+    display: flex;
+    scroll-behavior: smooth;
+}
+
+.card {
+    width: 200px;
+    text-align: center;
+    transition: .4s;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 1px 5px 15px #888888;
+}
+
+.card_box img {
+    width: 100%;
+    height: 250px;
+}
+
+.recomadition_book .container,
+.new_book .container {
+    overflow: hidden;
+}
+
+.the_outside {
+    position: relative;
+}
+
+.the_outside button {
+    position: absolute;
+    border: none;
+}
+
+.the_outside button {
+    width: 30px;
+    height: 30px;
+}
+
+#next_01,
+#next_02 {
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+    background: url(../next.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#previous_01,
+#previous_02 {
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    background: url(../previous.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
