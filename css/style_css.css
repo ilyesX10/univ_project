@@ -68,6 +68,21 @@
     height: 250px;
 }
 
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-card {
+    width: 90%;
+    font-weight: 700;
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 .recomadition_book .container,
 .new_book .container {
     overflow: hidden;
@@ -105,6 +120,11 @@
     background: url(../previous.png);
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.big-box-card {
+    flex-direction: column;
+    align-items: center;
 }
 
 .big-card {
@@ -234,4 +254,15 @@
         opacity: 1;
         top: 240px;
     }
+}
+
+.big-card-title {
+    width: 320px;
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    font-size: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
