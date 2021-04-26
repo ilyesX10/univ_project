@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css\bootstrap.min.css">
+    <script src="js\bootstrap.bundle.min.js "></script>
+    <title>Document</title>
+</head>
+<style>
+    .container_box {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .box {
+        position: relative;
+    }
+    
+    .box label {
+        position: absolute;
+        left: 8px;
+        top: 50%;
+        transform: translate(0, -50%);
+        font-size: 20px;
+        transition: .4s;
+    }
+    
+    .box input {
+        border: solid 1px black;
+        border-radius: 5px;
+        width: 300px;
+        height: 55px;
+    }
+    
+    .box input:focus {
+        outline: transparent;
+        border: 1px solid #0066ff;
+        box-shadow: 0 0 0 5px #0066ff86;
+    }
+    
+    .box input:focus+label {
+        top: 10px;
+        font-size: 15px;
+        opacity: .5;
+    }
+</style>
+
+<body>
+    <div class="container_box d-flex justify-content-center">
+        <form class="">
+            <h1 class="h3 m-3">The Library</h1>
+            <div class="box m-3">
+                <input type="email" class="form-style px-2" id="email_box">
+                <label for="email_box">Email address</label>
+            </div>
+            <div class="box m-3">
+                <input type="password" class="form-style px-2" id="password_box">
+                <label for="password_box">Password</label>
+            </div>
+            <button class="w-100 btn btn-lg btn-primary m-3" type="submit">Login</button>
+            <p class="text-muted m-3">&copy; 2021 univ_project</p>
+        </form>
+    </div>
+</body>
+
+</html>
