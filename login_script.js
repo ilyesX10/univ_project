@@ -31,7 +31,7 @@ function emailError() {
                     if (i != 2) inpt[i].setAttribute("disabled", "");
                 }
                 error.innerText = "The Form Of The Email is Wrong";
-                error.style.display = "block";
+                error_box.style.display = "block";
                 setTimeout(function() {
                     inpt[0].removeAttribute("disabled", "");
                     error.style.display = 'none';
@@ -49,6 +49,9 @@ function emailError() {
             }
         }
     } else {
+        for (let i = 0; i < inpt.length - 2; i++) {
+            inpt[i].removeAttribute("disabled", "");
+        }
         lab[0].style.display = "block";
         inpt[0].style.boxShadow = "none";
         inpt[0].style.border = "solid 1px black";
@@ -77,7 +80,7 @@ function passwordError() {
                     if (i != 2) inpt[i].setAttribute("disabled", "");
                 }
                 error.innerText = "The Password Shoudn't Contains An Characters Specials";
-                error.style.display = "block";
+                error_box.style.display = "block";
                 setTimeout(function() {
                     inpt[1].removeAttribute("disabled", "");
                     error.style.display = 'none';
@@ -93,7 +96,7 @@ function passwordError() {
                 if (i != 2) inpt[i].setAttribute("disabled", "");
             }
             error.innerText = "The Password Shoud Contains Letters And Numbers";
-            error.style.display = "block";
+            error_box.style.display = "block";
             setTimeout(function() {
                 inpt[1].removeAttribute("disabled", "");
                 error.style.display = 'none';
@@ -108,6 +111,9 @@ function passwordError() {
             }
         }
     } else {
+        for (let i = 0; i < inpt.length - 2; i++) {
+            inpt[i].removeAttribute("disabled", "");
+        }
         lab[1].style.display = "block";
         inpt[1].style.boxShadow = "none";
         inpt[1].style.border = "solid 1px black";
