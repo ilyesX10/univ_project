@@ -66,7 +66,7 @@ form {
 .check_box_lab {
     text-align: center;
     text-align-last: center;
-    font-size: 12px;
+    font-size: 10px;
 }
 
 @keyframes message {
