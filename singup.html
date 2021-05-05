@@ -14,30 +14,32 @@
 <body>
     <div class="container_box">
         <form>
-            <h1 class="h3 m-2">The Library</h1>
-            <div class="box m-2">
-                <input type="text" class="form-style px-2" id="username_box" autocomplete="off" onkeyup="enter(event)" onfocusout="userNameError()" onfocus="f_style()">
-                <label for="username_box">Username</label>
+            <h1 class="h3 m-lg-2 m-md-2 m-sm-2 m-1">The Library</h1>
+            <div class="box m-lg-2 m-md-2 m-sm-2 m-1">
+                <input type="text" class=" form-style px-2" id="username_box" autocomplete="off" onkeyup="enter(event)" onfocusout="userNameError()" onfocus="f_style()">
+                <label class="" for="username_box">Username</label>
             </div>
-            <div class="box m-2">
-                <input type="email" class="form-style px-2" id="email_box" autocomplete="off" onkeyup="enter(event)" onfocusout="emailError()" onfocus="f_style()">
+            <div class="box m-lg-2 m-md-2 m-sm-2 m-1">
+                <input type="email" class=" form-style px-2" id="email_box" autocomplete="off" onkeyup="enter(event)" onfocusout="emailError()" onfocus="f_style()">
                 <label for="email_box">Email address</label>
             </div>
-            <div class="box m-2">
-                <input type="password" class="form-style px-2" id="password_box" onkeyup="enter(event)" onfocusout="passwordError()" onfocus="f_style()">
+            <div class="box m-lg-2 m-md-2 m-sm-2 m-1">
+                <input type="password" class=" form-style px-2" id="password_box" onkeyup="enter(event)" onfocusout="passwordError()" onfocus="f_style()">
                 <label for="password_box">Password</label>
             </div>
-            <div class="box m-2">
-                <input type="password" class="form-style px-2" id="Confirm_password_box" onkeyup="enter(event)" onfocusout="comfirmPasswordError()" onfocus="f_style()">
+            <div class="box m-lg-2 m-md-2 m-sm-2 m-1">
+                <input type="password" class=" form-style px-2" id="Confirm_password_box" onkeyup="enter(event)" onfocusout="comfirmPasswordError()" onfocus="f_style()">
                 <label for="Confirm_password_box">Confirm Password</label>
             </div>
-            <div class="checkbox_aria m-2 d-flex align-items-center">
+            <div class="checkbox_aria m-lg-2 m-md-2 m-sm-2 m-1 d-flex align-items-center">
                 <input type="checkbox" class="mx-1" name="" autocomplete="off" id="check_box" onkeyup="check(event)">
-                <label for="check_box" class="mx-1">are you sure of your informations</label>
+                <label for="check_box" class="check_box_lab mx-1">are you sure of your informations</label>
             </div>
-            <input class="w-100 btn btn-lg btn-success m-2" type="submit" disabled value="Singin">
+            <input class="w-100 btn btn-lg btn-success m-lg-2 m-md-2 m-sm-2 m-1" type="submit" disabled value="Singin">
         </form>
         <p class="text-muted m-3 text-center">&copy; 2021 univ_project</p>
+    </div>
+    <div class="box_error">
         <div id="error_message" class="py-4 m-2 px-1"></div>
     </div>
     <script src="singup_script.js"></script>
