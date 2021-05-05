@@ -3,6 +3,7 @@ var validation_one = false,
     inpt = document.getElementsByTagName("INPUT"),
     lab = document.getElementsByTagName("LABEL"),
     error = document.getElementById("error_message"),
+    error_box = document.getElementsByClassName("box_error")[0],
     correct = true;
 
 function f_style() {
@@ -30,10 +31,10 @@ function userNameError() {
                     if (i != 4) inpt[i].setAttribute("disabled", "");
                 }
                 error.innerText = "The Username Shoudn't Contains A Number Or A Special Character";
-                error.style.display = "block";
+                error_box.style.display = "block";
                 setTimeout(function() {
                     inpt[0].removeAttribute("disabled", "");
-                    error.style.display = 'none';
+                    error_box.style.display = 'none';
                 }, 7000);
                 inpt[0].style.boxShadow = "0 0 0 5px rgba(255, 0, 0, 0.657)";
                 inpt[0].style.border = "solid 1.5px red";
@@ -48,6 +49,9 @@ function userNameError() {
             }
         }
     } else {
+        for (let i = 0; i < inpt.length - 2; i++) {
+            inpt[i].removeAttribute("disabled", "");
+        }
         lab[0].style.display = "block";
         inpt[0].style.boxShadow = "none";
         inpt[0].style.border = "solid 1px black";
@@ -76,10 +80,10 @@ function passwordError() {
                     if (i != 4) inpt[i].setAttribute("disabled", "");
                 }
                 error.innerText = "The Password Shoudn't Contains An Characters Specials";
-                error.style.display = "block";
+                error_box.style.display = "block";
                 setTimeout(function() {
                     inpt[2].removeAttribute("disabled", "");
-                    error.style.display = 'none';
+                    error_box.style.display = 'none';
                 }, 7000);
                 inpt[2].style.boxShadow = "0 0 0 5px rgba(255, 0, 0, 0.657)";
                 inpt[2].style.border = "solid 1.5px red";
@@ -92,10 +96,10 @@ function passwordError() {
                 if (i != 4) inpt[i].setAttribute("disabled", "");
             }
             error.innerText = "The Password Shoud Contains Letters And Numbers";
-            error.style.display = "block";
+            error_box.style.display = "block";
             setTimeout(function() {
                 inpt[2].removeAttribute("disabled", "");
-                error.style.display = 'none';
+                error_box.style.display = 'none';
             }, 7000);
             inpt[2].style.boxShadow = "0 0 0 5px rgba(255, 0, 0, 0.657)";
             inpt[2].style.border = "solid 1.5px red";
@@ -107,6 +111,9 @@ function passwordError() {
             }
         }
     } else {
+        for (let i = 0; i < inpt.length - 2; i++) {
+            inpt[i].removeAttribute("disabled", "");
+        }
         lab[2].style.display = "block";
         inpt[2].style.boxShadow = "none";
         inpt[2].style.border = "solid 1px black";
@@ -129,10 +136,10 @@ function comfirmPasswordError() {
                 if (i != 4) inpt[i].setAttribute("disabled", "");
             }
             error.innerText = "The Password and the Confirm Password are not the same";
-            error.style.display = "block";
+            error_box.style.display = "block";
             setTimeout(function() {
                 inpt[3].removeAttribute("disabled", "");
-                error.style.display = 'none';
+                error_box.style.display = 'none';
             }, 7000);
             inpt[3].style.boxShadow = "0 0 0 5px rgba(255, 0, 0, 0.657)";
             inpt[3].style.border = "solid 1.5px red";
@@ -145,10 +152,10 @@ function comfirmPasswordError() {
                     if (i != 4) inpt[i].setAttribute("disabled", "");
                 }
                 error.innerText = "The Length of the Password and the Confirm Password are not equal";
-                error.style.display = "block";
+                error_box.style.display = "block";
                 setTimeout(function() {
                     inpt[3].removeAttribute("disabled", "");
-                    error.style.display = 'none';
+                    error_box.style.display = 'none';
                 }, 7000);
                 inpt[3].style.boxShadow = "0 0 0 5px rgba(255, 0, 0, 0.657)";
                 inpt[3].style.border = "solid 1.5px red";
@@ -163,6 +170,9 @@ function comfirmPasswordError() {
             }
         }
     } else {
+        for (let i = 0; i < inpt.length - 2; i++) {
+            inpt[i].removeAttribute("disabled", "");
+        }
         lab[3].style.display = "block";
         inpt[3].style.boxShadow = "none";
         inpt[3].style.border = "solid 1px black";
@@ -184,10 +194,10 @@ function emailError() {
                     if (i != 4) inpt[i].setAttribute("disabled", "");
                 }
                 error.innerText = "The Form Of The Email is Wrong";
-                error.style.display = "block";
+                error_box.style.display = "block";
                 setTimeout(function() {
                     inpt[1].removeAttribute("disabled", "");
-                    error.style.display = 'none';
+                    error_box.style.display = 'none';
                 }, 7000);
                 inpt[1].style.boxShadow = "0 0 0 5px rgba(255, 0, 0, 0.657)";
                 inpt[1].style.border = "solid 1.5px red";
@@ -202,6 +212,9 @@ function emailError() {
             }
         }
     } else {
+        for (let i = 0; i < inpt.length - 2; i++) {
+            inpt[i].removeAttribute("disabled", "");
+        }
         lab[1].style.display = "block";
         inpt[1].style.boxShadow = "none";
         inpt[1].style.border = "solid 1px black";
