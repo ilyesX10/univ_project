@@ -9,53 +9,6 @@
     <script src="js\bootstrap.bundle.min.js "></script>
     <title>Document</title>
 </head>
-<style>
-    .container_box {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-    }
-    
-    form {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .box {
-        position: relative;
-    }
-    
-    .box label {
-        position: absolute;
-        left: 8px;
-        top: 50%;
-        transform: translate(0, -50%);
-        font-size: 20px;
-        transition: .4s;
-    }
-    
-    .box input {
-        border: solid 1px black;
-        border-radius: 5px;
-        width: 300px;
-        height: 55px;
-    }
-    
-    .box input:focus {
-        outline: transparent;
-        border: 1px solid #0066ff;
-        box-shadow: 0 0 0 5px #0066ff86;
-    }
-    
-    .box input:focus+label {
-        top: 10px;
-        font-size: 15px;
-        opacity: .5;
-    }
-</style>
-
 <body>
     <div class="container_box d-flex justify-content-center">
         <form class="">
