@@ -3,6 +3,7 @@ var validation_one = false,
     inpt = document.getElementsByTagName("INPUT"),
     lab = document.getElementsByTagName("LABEL"),
     error = document.getElementById("error_message"),
+    error_box = document.getElementsByClassName("box_error")[0],
     correct = true;
 
 function f_style() {
