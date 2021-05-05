@@ -7,24 +7,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css\bootstrap.min.css">
     <script src="js\bootstrap.bundle.min.js "></script>
+    <link rel="stylesheet" href="login&singup_style.css">
     <title>Document</title>
 </head>
+
 <body>
-    <div class="container_box d-flex justify-content-center">
-        <form class="">
+    <div class="container_box">
+        <form>
             <h1 class="h3 m-3">The Library</h1>
             <div class="box m-3">
-                <input type="email" class="form-style px-2" id="email_box">
+                <input type="email" class="form-style px-2" id="email_box" autocomplete="off" onkeyup="enter(event)" onfocusout="emailError()" onfocus="f_style()">
                 <label for="email_box">Email address</label>
             </div>
             <div class="box m-3">
-                <input type="password" class="form-style px-2" id="password_box">
+                <input type="password" class="form-style px-2" id="password_box" autocomplete="off" onkeyup="enter(event)" onfocusout="passwordError()" onfocus="f_style()">
                 <label for="password_box">Password</label>
             </div>
-            <button class="w-100 btn btn-lg btn-primary m-3" type="submit">Login</button>
-            <p class="text-muted m-3">&copy; 2021 univ_project</p>
+            <div class="checkbox_aria m-2 d-flex align-items-center">
+                <input type="checkbox" class="mx-1" name="" id="check_box" onkeyup="check(event)">
+                <label for="check_box" class="mx-1">are you sure of your informations</label>
+            </div>
+            <input class="w-100 btn btn-lg btn-primary m-3" disabled type="submit" value="Login">
         </form>
+        <p class="text-muted m-3 text-center">&copy; 2021 univ_project</p>
+        <div id="error_message" class="py-4"></div>
     </div>
+    <script src="login_script.js"></script>
 </body>
 
 </html>
