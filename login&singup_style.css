@@ -58,15 +58,16 @@ form {
 }
 
 .checkbox_aria {
+    width: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 14px;
 }
 
 .check_box_lab {
     text-align: center;
     text-align-last: center;
-    font-size: 14px;
 }
 
 @keyframes message {
