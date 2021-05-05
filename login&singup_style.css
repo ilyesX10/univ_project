@@ -6,6 +6,7 @@
 }
 
 form {
+    position: fixed;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -57,7 +58,15 @@ form {
     outline-offset: 5px;
 }
 
+.checkbox_aria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .check_box_lab {
+    text-align: center;
+    text-align-last: center;
     font-size: 15px;
 }
 
